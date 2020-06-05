@@ -271,10 +271,10 @@ function saveProgress(offraidData, sessionID) {
     }
 
     //Check for exit status
-    if(offraidData.exit === "survived"){
+    if (offraidData.exit === "survived") {
         // mark found items and replace item ID's if the player survived
         offraidData.profile = markFoundItems(pmcData, offraidData.profile, isPlayerScav);
-    }else{
+    } else {
         //Or remove the FIR status if the player havn't survived
         offraidData.profile = RemoveFoundItems(offraidData.profile)
     }
@@ -289,8 +289,7 @@ function saveProgress(offraidData, sessionID) {
         return;
     } else {
         pmcData = setInventory(pmcData, offraidData.profile);
-        health_f.healthServer.saveHealth(pmcData, offraidData.health, sessionID);
-        // health_f.healthServer.applyHealth(pmcData, sessionID);
+        health_f.healthServer.saveHealth(pmcData, offraidData.profile.health, sessionID);
     }
 
     // remove inventory if player died and send insurance items

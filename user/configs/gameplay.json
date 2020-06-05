@@ -20,22 +20,18 @@
         },
         "limits": {
             "assault": 30,
-            "cursedAssault": 30,
             "marksman": 30,
             "pmcBot": 30,
             "bossBully": 30,
             "bossGluhar": 30,
             "bossKilla": 30,
             "bossKojaniy": 30,
-            "bossStormtrooper": 30,
-            "bossTest": 30,
             "followerBully": 30,
             "followerGluharAssault": 30,
             "followerGluharScout": 30,
             "followerGluharSecurity": 30,
             "followerGluharSnipe": 30,
             "followerKojaniy": 30,
-            "followerStormtrooper": 30,
             "followerTest": 30
         }
     },

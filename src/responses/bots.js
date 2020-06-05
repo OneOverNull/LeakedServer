@@ -8,7 +8,7 @@ function getBotLimit(url, info, sessionID) {
     let splittedUrl = url.split('/');
     let type = splittedUrl[splittedUrl.length - 1];
 
-    if (type === "cursedassault")
+    if (type === "cursedAssault")
     {
         type = "assault";
     }
@@ -22,7 +22,7 @@ function getBotDifficulty(url, info, sessionID) {
     let difficulty = splittedUrl[splittedUrl.length - 1];
 
     if (type === "core") {
-        return response_f.noBody(json.read(db.bots.core));
+        return json.read(db.bots.core);
     }
 
     if (type === "cursedassault")
@@ -30,7 +30,7 @@ function getBotDifficulty(url, info, sessionID) {
         type = "assault";
     }
 
-    return response_f.noBody(json.read(db.bots[type].difficulties[difficulty]));
+    return json.read(db.bots[type].difficulties[difficulty]);
 }
 
 router.addStaticRoute("/client/game/bot/generate", getBots);

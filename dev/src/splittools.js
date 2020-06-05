@@ -204,12 +204,15 @@ function localesHelper(language, shortName) {
 
         for (let target in key) {
             let output = outputDir + "locales/" + shortName + "/"  + element + "/" + target + ".json";
+            let file = key[target];
 
-            if ("startedMessageText" in key) {
-                key.startedMessageText = "";
+            console.log(file);
+
+            if (element === "quest" && "successMessageText" in file) {
+                file.startedMessageText = "";
             }
 
-            json.write(output, key[target]);
+            json.write(output, file);
             console.log("done: " + output);
         }
     }
