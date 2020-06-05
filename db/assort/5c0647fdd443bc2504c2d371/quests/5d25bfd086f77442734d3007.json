@@ -61,7 +61,7 @@
 				"value": "2",
 				"id": "newReward",
 				"type": "Item",
-				"index": 2,
+				"index": 4,
 				"items": [
 					{
 						"_id": "waterFilter",
@@ -71,7 +71,7 @@
 						}
 					}
 				]
-			},
+			}
 		],
 		"Fail": []
 	},
