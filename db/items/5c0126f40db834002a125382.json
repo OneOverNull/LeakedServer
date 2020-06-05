@@ -13,7 +13,7 @@
 		"Height": 3,
 		"StackMaxSize": 1,
 		"Rarity": "Superrare",
-		"SpawnChance": 1,
+		"SpawnChance": 0.3,
 		"CreditsPrice": 56630,
 		"ItemSound": "knife_generic",
 		"Prefab": {

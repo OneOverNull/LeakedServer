@@ -13,7 +13,7 @@
 		"Height": 1,
 		"StackMaxSize": 1,
 		"Rarity": "Common",
-		"SpawnChance": 7,
+		"SpawnChance": 11,
 		"CreditsPrice": 5800,
 		"ItemSound": "item_cloth_generic",
 		"Prefab": {

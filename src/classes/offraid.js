@@ -1,27 +1,41 @@
 "use strict";
 
-// remove the labs keycard at the end of raid in labs
-function removeLabKeyCard(offraidData) {
-    if (offraidData.profile.Info.EntryPoint !== "Common") {
-        return;
+class InraidServer {
+    constructor() {
+        this.players = {};
+        this.keycard = "5c94bbff86f7747ee735c08f"
     }
 
-    for (let item of offraidData.profile.Inventory.items) {
-        if (item._tpl === "5c94bbff86f7747ee735c08f" && item.slotId !== "Hideout") {
-            //this will not correctly 
-            let usages = ("upd" in item && "Key" in item.upd) ? item.upd.Key.NumberOfUsages : -1;
+    addPlayer(sessionID, info) {
+        this.players[sessionID] = info;
+    }
 
-            if (usages === -1) {
-                item.upd = {"Key": {"NumberOfUsages": 1 }};
-            } else {
-                item.upd.Key.NumberOfUsages += 1;
+    removePlayer(sessionID) {
+        delete this.players[sessionID];
+    }
+
+    removeLabKeyCard(offraidData, sessionID) {
+        if (this.players[sessionID] !== "Common") {
+            return;
+        }
+    
+        for (let item of offraidData.profile.Inventory.items) {
+            if (item._tpl === this.keycard && item.slotId !== "Hideout") {
+                //this will not correctly 
+                let usages = ("upd" in item && "Key" in item.upd) ? item.upd.Key.NumberOfUsages : -1;
+    
+                if (usages === -1) {
+                    item.upd = {"Key": {"NumberOfUsages": 1 }};
+                } else {
+                    item.upd.Key.NumberOfUsages += 1;
+                }
+    
+                if (item.upd.Key.NumberOfUsages >= itm_hf.getItem(this.keycard)[1]._props.MaximumNumberOfUsage) {
+                    move_f.removeItemFromProfile(offraidData.profile, item._id);
+                }
+    
+                break;
             }
-
-            if (item.upd.Key.NumberOfUsages >= itm_hf.getItem("5c94bbff86f7747ee735c08f")[1]._props.MaximumNumberOfUsage) {
-                move_f.removeItemFromProfile(offraidData.profile, item._id);
-            }
-
-            break;
         }
     }
 }
@@ -58,6 +72,19 @@ function markFoundItems(pmcData, offraidData, isPlayerScav) {
         } else {
             offraidItem.upd = {"SpawnedInSession": true};
         }
+    }
+
+    return offraidData;
+}
+
+function RemoveFoundItems(offraidData) {
+    for (let offraidItem of offraidData.Inventory.items) {
+        // Remove the FIR status if the player died and the item marked FIR
+        if ("upd" in offraidItem && "SpawnedInSession" in offraidItem.upd) {
+            delete offraidItem.upd.SpawnedInSession;
+        }
+
+        continue;
     }
 
     return offraidData;
@@ -239,11 +266,19 @@ function saveProgress(offraidData, sessionID) {
         }
 
         // Remove the Lab card
-        removeLabKeyCard(offraidData);
+        offraid_f.inraidServer.removeLabKeyCard(offraidData, sessionID);
+        offraid_f.inraidServer.removePlayer(sessionID);
     }
 
-    // mark found items and replace item ID's
-    offraidData.profile = markFoundItems(pmcData, offraidData.profile, isPlayerScav);
+    //Check for exit status
+    if(offraidData.exit === "survived"){
+        // mark found items and replace item ID's if the player survived
+        offraidData.profile = markFoundItems(pmcData, offraidData.profile, isPlayerScav);
+    }else{
+        //Or remove the FIR status if the player havn't survived
+        offraidData.profile = RemoveFoundItems(offraidData.profile)
+    }
+
     offraidData.profile.Inventory.items = itm_hf.replaceIDs(offraidData.profile, offraidData.profile.Inventory.items);
 
     // set profile equipment to the raid equipment
@@ -254,7 +289,8 @@ function saveProgress(offraidData, sessionID) {
         return;
     } else {
         pmcData = setInventory(pmcData, offraidData.profile);
-        health_f.healthServer.applyHealth(pmcData, sessionID);
+        health_f.healthServer.saveHealth(pmcData, offraidData.health, sessionID);
+        // health_f.healthServer.applyHealth(pmcData, sessionID);
     }
 
     // remove inventory if player died and send insurance items
@@ -268,6 +304,7 @@ function saveProgress(offraidData, sessionID) {
     insurance_f.insuranceServer.sendInsuredItems(pmcData, sessionID);
 }
 
+module.exports.inraidServer = new InraidServer();
 module.exports.saveProgress = saveProgress;
 module.exports.getSecuredContainer = getSecuredContainer;
 module.exports.getPlayerGear = getPlayerGear;

@@ -13,7 +13,7 @@
 		"Height": 1,
 		"StackMaxSize": 50,
 		"Rarity": "Rare",
-		"SpawnChance": 10,
+		"SpawnChance": 7,
 		"CreditsPrice": 215,
 		"ItemSound": "ammo_singleround",
 		"Prefab": {
@@ -63,7 +63,7 @@
 		"ammoType": "bullet",
 		"Damage": 58,
 		"ammoAccr": 0,
-		"ammoRec": 7,
+		"ammoRec": 10,
 		"ammoDist": 0,
 		"buckshotBullets": 0,
 		"PenetrationPower": 43,

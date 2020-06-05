@@ -68,16 +68,41 @@
 		],
 		"AvailableForFinish": [
 			{
+				"_parent": "FindItem",
+				"_props": {
+					"target": [
+						"590a3efd86f77437d351a25b"
+					],
+					"value": "2",
+					"minDurability": 0,
+					"maxDurability": 0,
+					"dogtagLevel": 0,
+					"onlyFoundInRaid": true,
+					"index": 1,
+					"parentId": "",
+					"id": "5ec1398886f7561e047757a5"
+				}
+			},
+			{
 				"_parent": "HandoverItem",
 				"_props": {
 					"target": [
 						"590a3efd86f77437d351a25b"
 					],
-					"value": "3",
+					"value": "2",
 					"index": 2,
 					"parentId": "",
 					"id": "596a20ac86f7741ddf17dbf4",
-					"visibilityConditions": []
+					"visibilityConditions": [
+						{
+							"_parent": "CompleteCondition",
+							"_props": {
+								"target": "5ec1398886f7561e047757a5",
+								"id": "5a5778be86f7740adc2f7f89"
+							}
+						}
+					],
+					"onlyFoundInRaid": true
 				}
 			}
 		],

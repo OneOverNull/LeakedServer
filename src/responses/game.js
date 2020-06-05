@@ -17,14 +17,14 @@ function getServer(url, info, sessionID) {
 }
 
 function validateGameVersion(url, info, sessionID) {
-    return response_f.nullResponse();
+    return response_f.getBody({"isvalid": true, "latestVersion": ""});
 }
 
 router.addStaticRoute("/client/game/profile/select", selectProfile);
 router.addStaticRoute("/client/profile/status", getProfileStatus);
 router.addStaticRoute("/client/server/list", getServer);
-router.addStaticRoute("/client/game/version/validate", validateGameVersion);
+router.addStaticRoute("/client/game/version/validate", response_f.nullResponse);
 router.addStaticRoute("/client/game/config", getGameConfig);
+router.addStaticRoute("/client/game/start", response_f.nullResponse);
 router.addStaticRoute("/client/game/logout", response_f.nullResponse);
-router.addStaticRoute("/client/match/group/status", response_f.nullResponse);
-router.addStaticRoute("/client/match/exit", response_f.nullResponse);
+router.addStaticRoute("/client/checkVersion", validateGameVersion)

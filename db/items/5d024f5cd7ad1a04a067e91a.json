@@ -12,8 +12,8 @@
 		"Width": 1,
 		"Height": 1,
 		"StackMaxSize": 1,
-		"Rarity": "Not_exist",
-		"SpawnChance": 10,
+		"Rarity": "Common",
+		"SpawnChance": 2,
 		"CreditsPrice": 2450,
 		"ItemSound": "mod",
 		"Prefab": {
@@ -48,7 +48,10 @@
 		"CanSellOnRagfair": true,
 		"CanRequireOnRagfair": true,
 		"BannedFromRagfair": false,
-		"ConflictingItems": [],
+		"ConflictingItems": [
+			"5bc5a372d4351e44f824d17f",
+			"5bbdb811d4351e45020113c7"
+		],
 		"FixedPrice": false,
 		"Unlootable": false,
 		"UnlootableFromSlot": "FirstPrimaryWeapon",
