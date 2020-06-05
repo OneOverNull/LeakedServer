@@ -55,6 +55,22 @@
 						}
 					}
 				]
+			},
+			{
+				"target": "reward",
+				"value": "1",
+				"id": "slick_reward",
+				"type": "Item",
+				"index": 4,
+				"items": [
+					{
+						"_id": "reward",
+						"_tpl": "5e4abb5086f77406975c9342",
+						"upd": {
+							"StackObjectsCount": 1
+						}
+					}
+				]
 			}
 		],
 		"Fail": []

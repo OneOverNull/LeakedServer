@@ -13,7 +13,7 @@
 		"Height": 1,
 		"StackMaxSize": 1,
 		"Rarity": "Common",
-		"SpawnChance": 4,
+		"SpawnChance": 6,
 		"CreditsPrice": 1200,
 		"ItemSound": "magazine_metal",
 		"Prefab": {
@@ -67,7 +67,7 @@
 		"Recoil": 0,
 		"Loudness": 0,
 		"EffectiveDistance": 0,
-		"Ergonomics": 0,
+		"Ergonomics": 1,
 		"Velocity": 0,
 		"RaidModdable": true,
 		"ToolModdable": false,

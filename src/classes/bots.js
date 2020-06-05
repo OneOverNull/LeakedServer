@@ -42,7 +42,7 @@ function addDogtag(bot, sessionID) {
 }
 
 function generateBot(bot, role, sessionID) {
-	let type = (role === "cursedAssault") ? "assault" : role;
+	let type = role;
 	let node = {};
 
 	// chance to spawn simulated PMC players

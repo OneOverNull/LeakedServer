@@ -74,7 +74,7 @@
 			},
 			{
 				"target": "Metabolism",
-				"value": "2",
+				"value": "200",
 				"id": "5d66735486f774368e1b7868",
 				"type": "Skill",
 				"index": 5
@@ -104,6 +104,15 @@
 					"counter": {
 						"id": "5d25d4e786f77442734d335c",
 						"conditions": [
+							{
+								"_parent": "Location",
+								"_props": {
+									"target": [
+										"woods"
+									],
+									"id": "junkieQuest"
+								}
+							},
 							{
 								"_parent": "HealthEffect",
 								"_props": {

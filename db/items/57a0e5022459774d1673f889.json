@@ -63,7 +63,7 @@
 		"ammoType": "bullet",
 		"Damage": 58,
 		"ammoAccr": 0,
-		"ammoRec": 7,
+		"ammoRec": 10,
 		"ammoDist": 0,
 		"buckshotBullets": 0,
 		"PenetrationPower": 43,

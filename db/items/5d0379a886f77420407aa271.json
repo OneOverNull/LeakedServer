@@ -13,7 +13,7 @@
 		"Height": 2,
 		"StackMaxSize": 1,
 		"Rarity": "Rare",
-		"SpawnChance": 32,
+		"SpawnChance": 34,
 		"CreditsPrice": 8000,
 		"ItemSound": "smallmetal",
 		"Prefab": {

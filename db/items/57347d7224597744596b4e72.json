@@ -13,7 +13,7 @@
 		"Height": 1,
 		"StackMaxSize": 1,
 		"Rarity": "Common",
-		"SpawnChance": 20,
+		"SpawnChance": 23,
 		"CreditsPrice": 11252,
 		"ItemSound": "food_tin_can",
 		"Prefab": {

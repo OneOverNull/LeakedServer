@@ -13,7 +13,7 @@
 		"Height": 1,
 		"StackMaxSize": 1,
 		"Rarity": "Superrare",
-		"SpawnChance": 4,
+		"SpawnChance": 1,
 		"CreditsPrice": 48336,
 		"ItemSound": "weap_dmr",
 		"Prefab": {

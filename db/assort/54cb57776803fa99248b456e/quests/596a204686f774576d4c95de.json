@@ -93,7 +93,15 @@
 					"index": 2,
 					"parentId": "",
 					"id": "596a20ac86f7741ddf17dbf4",
-					"visibilityConditions": [],
+					"visibilityConditions": [
+						{
+							"_parent": "CompleteCondition",
+							"_props": {
+								"target": "5ec1398886f7561e047757a5",
+								"id": "5a5778be86f7740adc2f7f89"
+							}
+						}
+					],
 					"onlyFoundInRaid": true
 				}
 			}

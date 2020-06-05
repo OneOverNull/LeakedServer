@@ -55,7 +55,23 @@
 				"id": "5d762a0286f774454c5360c0",
 				"type": "TraderStanding",
 				"index": 3
-			}
+			},
+			{
+				"target": "waterFilter",
+				"value": "2",
+				"id": "newReward",
+				"type": "Item",
+				"index": 2,
+				"items": [
+					{
+						"_id": "waterFilter",
+						"_tpl": "5d1b385e86f774252167b98a",
+						"upd": {
+							"StackObjectsCount": 2
+						}
+					}
+				]
+			},
 		],
 		"Fail": []
 	},

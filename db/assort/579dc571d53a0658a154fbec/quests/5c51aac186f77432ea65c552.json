@@ -482,6 +482,136 @@
 					"parentId": "",
 					"id": ""
 				}
+			},
+			{
+				"_parent": "Quest",
+				"_props": {
+					"target": "5d6fb2c086f77449da599c24",
+					"status": [4],
+					"index": 51,
+					"parentId": "",
+					"id": ""
+				}
+			},
+			{
+				"_parent": "Quest",
+				"_props": {
+					"target": "5ae4499a86f77449783815db",
+					"status": [4],
+					"index": 52,
+					"parentId": "",
+					"id": ""
+				}
+			},
+			{
+				"_parent": "Quest",
+				"_props": {
+					"target": "5a5642ce86f77445c63c3419",
+					"status": [4],
+					"index": 53,
+					"parentId": "",
+					"id": ""
+				}
+			},
+			{
+				"_parent": "Quest",
+				"_props": {
+					"target": "5d25e4ca86f77409dd5cdf2c",
+					"status": [4],
+					"index": 54,
+					"parentId": "",
+					"id": ""
+				}
+			},
+			{
+				"_parent": "Quest",
+				"_props": {
+					"target": "5d25e2d886f77442734d335e",
+					"status": [4],
+					"index": 55,
+					"parentId": "",
+					"id": ""
+				}
+			},
+			{
+				"_parent": "Quest",
+				"_props": {
+					"target": "5d25e44386f77409453bce7b",
+					"status": [4],
+					"index": 55,
+					"parentId": "",
+					"id": ""
+				}
+			},
+			{
+				"_parent": "Quest",
+				"_props": {
+					"target": "5c139eb686f7747878361a6f",
+					"status": [4],
+					"index": 56,
+					"parentId": "",
+					"id": ""
+				}
+			},
+			{
+				"_parent": "Quest",
+				"_props": {
+					"target": "5d6fbc2886f77449d825f9d3",
+					"status": [4],
+					"index": 57,
+					"parentId": "",
+					"id": ""
+				}
+			},
+			{
+				"_parent": "Quest",
+				"_props": {
+					"target": "59ca1a6286f774509a270942",
+					"status": [4],
+					"index": 58,
+					"parentId": "",
+					"id": ""
+				}
+			},
+			{
+				"_parent": "Quest",
+				"_props": {
+					"target": "5d4bec3486f7743cac246665",
+					"status": [4],
+					"index": 59,
+					"parentId": "",
+					"id": ""
+				}
+			},
+			{
+				"_parent": "Quest",
+				"_props": {
+					"target": "5e381b0286f77420e3417a74",
+					"status": [4],
+					"index": 60,
+					"parentId": "",
+					"id": ""
+				}
+			},
+			{
+				"_parent": "Quest",
+				"_props": {
+					"target": "5e4d515e86f77438b2195244",
+					"status": [4],
+					"index": 61,
+					"parentId": "",
+					"id": ""
+				}
+			},
+			{
+				"_parent": "Quest",
+				"_props": {
+					"target": "59c9392986f7742f6923add2",
+					"status": [4],
+					"index": 62,
+					"parentId": "",
+					"id": ""
+				}
 			}
 		],
 		"AvailableForFinish": [
@@ -866,6 +996,135 @@
 					"index": 23,
 					"parentId": "",
 					"id": "5c51c25c86f77478bf5632af",
+					"onlyFoundInRaid": true
+				}
+			},
+			{
+				"_parent": "FindItem",
+				"_props": {
+					"target": [
+						"5e54f62086f774219b0f1937"
+					],
+					"value": "1",
+					"minDurability": 0,
+					"maxDurability": 0,
+					"dogtagLevel": 0,
+					"onlyFoundInRaid": true,
+					"index": 24,
+					"parentId": "",
+					"id": "5de798b233870205123c7f33"
+				}
+			},
+			{
+				"_parent": "HandoverItem",
+				"_props": {
+					"target": [
+						"5e54f62086f774219b0f1937"
+					],
+					"value": "1",
+					"minDurability": 0,
+					"maxDurability": 0,
+					"dogtagLevel": 0,
+					"index": 25,
+					"parentId": "",
+					"id": "5c51db2a86f77478be4009ff",
+					"onlyFoundInRaid": true
+				}
+			},
+			{
+				"_parent": "FindItem",
+				"_props": {
+					"target": [
+						"5e54f6af86f7742199090bf3"
+					],
+					"value": "1",
+					"minDurability": 0,
+					"maxDurability": 0,
+					"dogtagLevel": 0,
+					"onlyFoundInRaid": true,
+					"index": 26,
+					"parentId": "",
+					"id": "5ec798b8254c431289542b90"
+				}
+			},
+			{
+				"_parent": "HandoverItem",
+				"_props": {
+					"target": [
+						"5e54f6af86f7742199090bf3"
+					],
+					"value": "1",
+					"minDurability": 0,
+					"maxDurability": 0,
+					"dogtagLevel": 0,
+					"index": 27,
+					"parentId": "",
+					"id": "5c52b92e86f77478be400a00",
+					"onlyFoundInRaid": true
+				}
+			},
+			{
+				"_parent": "FindItem",
+				"_props": {
+					"target": [
+						"5e54f76986f7740366043752"
+					],
+					"value": "1",
+					"minDurability": 0,
+					"maxDurability": 0,
+					"dogtagLevel": 0,
+					"onlyFoundInRaid": true,
+					"index": 28,
+					"parentId": "",
+					"id": "5ec798b8254c431289542b90"
+				}
+			},
+			{
+				"_parent": "HandoverItem",
+				"_props": {
+					"target": [
+						"5e54f76986f7740366043752"
+					],
+					"value": "1",
+					"minDurability": 0,
+					"maxDurability": 0,
+					"dogtagLevel": 0,
+					"index": 29,
+					"parentId": "",
+					"id": "5c52bb0586f774119c51f7f2",
+					"onlyFoundInRaid": true
+				}
+			},
+
+			{
+				"_parent": "FindItem",
+				"_props": {
+					"target": [
+						"5e54f79686f7744022011103"
+					],
+					"value": "1",
+					"minDurability": 0,
+					"maxDurability": 0,
+					"dogtagLevel": 0,
+					"onlyFoundInRaid": true,
+					"index": 30,
+					"parentId": "",
+					"id": "5ec79aaac1683c0db84484e8"
+				}
+			},
+			{
+				"_parent": "HandoverItem",
+				"_props": {
+					"target": [
+						"5e54f79686f7744022011103"
+					],
+					"value": "1",
+					"minDurability": 0,
+					"maxDurability": 0,
+					"dogtagLevel": 0,
+					"index": 31,
+					"parentId": "",
+					"id": "5c52bb6486f774119d57d3c2",
 					"onlyFoundInRaid": true
 				}
 			}
