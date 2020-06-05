@@ -6,7 +6,7 @@ function getBots(url, info, sessionID) {
 
 function getBotLimit(url, info, sessionID) {
     let splittedUrl = url.split('/');
-    let type = splittedUrl[splittedUrl.length - 1].toLowerCase();
+    let type = splittedUrl[splittedUrl.length - 1];
 
     if (type === "cursedassault")
     {
