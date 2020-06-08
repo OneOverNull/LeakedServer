@@ -45,17 +45,6 @@ class HealthServer {
             if (item._id === body.item) {
                 let itemProps = itm_hf.getItem(item._tpl)[1]._props;
                 let maxHpResource = itemProps.MaxHpResource;
-                // let hpResourceRate = itemProps.hpResourceRate;
-                // let effects_damage = itemProps.effects_damage;
-
-                // // splint
-                // if (effects_damage.fracture.remove === true)
-                //     if (this.effects[sessionID][body.part].BreakPart != undefined)
-                //         delete this.effects[sessionID][body.part].BreakPart;
-
-                // // heal only if used medkit
-                // if (hpResourceRate > 0)
-                //     this.healths[sessionID][body.part] = Math.min(pmcData.Health.BodyParts[body.part].Health.Current + body.count, pmcData.Health.BodyParts[body.part].Health.Maximum);
 
                 // todo: change output
                 // added checks for splint and non medkit items
@@ -73,7 +62,6 @@ class HealthServer {
             }
         }
 
-        // this.applyHealth(pmcData, sessionID);
         return output;
     }
 
@@ -81,13 +69,11 @@ class HealthServer {
         let output = item_f.itemServer.getOutput();
         let resourceLeft;
         let maxResource = {};
-        // let effects = {};
     
         for (let item of pmcData.Inventory.items) {
             if (item._id === body.item) {
                 let itemProps = itm_hf.getItem(item._tpl)[1]._props;
                 maxResource = itemProps.MaxResource;
-                // effects = itemProps.effects_health; 
 
                 if (maxResource > 1) {   
                     if ("FoodDrink" in item.upd) {
@@ -104,10 +90,7 @@ class HealthServer {
         if (maxResource === 1 || resourceLeft < 1) {
             output = move_f.removeItem(pmcData, body.item, output, sessionID);
         }
-        
-        // this.healths[sessionID].Hydration += effects.hydration.value;
-        // this.healths[sessionID].Energy += effects.energy.value;
-        // this.applyHealth(pmcData, sessionID);
+
         return output;
     }
 
@@ -118,12 +101,10 @@ class HealthServer {
 
         nodeHealth.Hydration = info.Hydration;
         nodeHealth.Energy = info.Energy;
+        console.log(info)
 
-        // for-in loop give 1,2,3... keys except strings :( 
-        // fuck JS
-        Object.keys(info.Health).forEach(bodyPart => {
-            if (info.Health[bodyPart].Effects != undefined)
-            { 
+        for (let bodyPart of Object.keys(info.Health)) {
+            if (info.Health[bodyPart].Effects != undefined) { 
                 nodeEffects[bodyPart] = info.Health[bodyPart].Effects;
             }
 
@@ -132,7 +113,7 @@ class HealthServer {
             } else {
                 nodeHealth[bodyPart] = -1;
             }
-        });
+        }
 
         this.applyHealth(pmcData, sessionID);
     }
