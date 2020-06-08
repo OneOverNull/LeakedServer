@@ -53,7 +53,7 @@ class HealthServer {
                 } else if (maxHpResource > 0) {
                     if (item.upd == undefined)
                         item.upd = {};
-                    item.upd.MedKit = {"HpResource": maxhp - body.count};
+                    item.upd.MedKit = {"HpResource": MaxHpResource - body.count};
                 }
     
                 if (maxHpResource === 0 || item.upd.MedKit.HpResource === 0) {
@@ -101,7 +101,6 @@ class HealthServer {
 
         nodeHealth.Hydration = info.Hydration;
         nodeHealth.Energy = info.Energy;
-        console.log(info)
 
         for (let bodyPart of Object.keys(info.Health)) {
             if (info.Health[bodyPart].Effects != undefined) { 
