@@ -74,9 +74,6 @@ class TraderServer {
         // set level
         pmcData.TraderStandings[traderID].currentLevel = targetLevel;
         this.traders[traderID].loyalty.currentLevel = targetLevel;
-
-        // set assort
-        this.generateAssort(traderID);
     }
 
     resetTrader(sessionID, traderID) {
@@ -96,40 +93,46 @@ class TraderServer {
         this.lvlUp(traderID, sessionID);
     }
 
-    getAssort(traderID) {
+    getAssort(sessionID, traderID) {
         if (!(traderID in this.assorts)) {
-            this.generateAssort(traderID);
+            if (traderID === "579dc571d53a0658a154fbec") {
+                logger.logWarning("generating fence");
+                this.generateFenceAssort();
+            } else {
+                this.assorts[traderID] = (json.parse(json.read(db.user.cache["assort_" + traderID]))).data;
+            }
         }
         
-        return this.assorts[traderID];
-    }
-
-    generateAssort(traderID) {
-        if (traderID === "579dc571d53a0658a154fbec") {
-            logger.logWarning("generating fence");
-            this.generateFenceAssort();
-            return;
-        }
-
-        let base = json.parse(json.read(db.user.cache["assort_" + traderID]));
-
-        base = base.data;
-
         // 1 is min level, 4 is max level
+        let base = this.assorts[traderID];
+        let questassort = json.parse(json.read(db.assort[traderID].questassort));
+        let pmcData = profile_f.profileServer.getPmcProfile(sessionID);
+
         if (traderID !== "ragfair") {
-            let keys = Object.keys(base.loyal_level_items);
             let level = this.traders[traderID].loyalty.currentLevel;
 
             for (let i = 1; i < 4; i++) {
-                for (let key of keys) {
+                for (let key in base.loyal_level_items) {
                     if (base.loyal_level_items[key] > level) {
+                        base = this.removeItemFromAssort(base, key);
+                    }
+
+                    if (key in questassort.started && questassort.getQuestStatus(pmcData, questassort.started[key]) !== "Started") {
+                        base = this.removeItemFromAssort(base, key);
+                    }
+
+                    if (key in questassort.success && questassort.getQuestStatus(pmcData, questassort.success[key]) !== "Success") {
+                        base = this.removeItemFromAssort(base, key);
+                    }
+
+                    if (key in questassort.fail && questassort.getQuestStatus(pmcData, questassort.fail[key]) !== "Fail") {
                         base = this.removeItemFromAssort(base, key);
                     }
                 }
             }
         }
 
-        this.assorts[traderID] = base;
+        return base;
     }
 
     generateFenceAssort() {

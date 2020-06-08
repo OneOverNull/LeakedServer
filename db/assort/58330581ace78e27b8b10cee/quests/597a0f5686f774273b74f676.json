@@ -43,7 +43,7 @@
 			},
 			{
 				"target": "5e0ac74b9d594972a112a899",
-				"value": "75000",
+				"value": "36500",
 				"type": "Item",
 				"index": 2,
 				"id": "5a2e7a4886f7741b57301c44",
@@ -52,7 +52,7 @@
 						"_id": "5e0ac74b9d594972a112a899",
 						"_tpl": "5449016a4bdc2d6f028b456f",
 						"upd": {
-							"StackObjectsCount": 75000
+							"StackObjectsCount": 36500
 						}
 					}
 				]

@@ -39,6 +39,22 @@
 				"id": "5bcf0f5c86f77423be216105",
 				"type": "TraderStanding",
 				"index": 2
+			},
+			{
+				"target": "FuelReward",
+				"value": "2",
+				"id": "reward",
+				"type": "Item",
+				"index": 3,
+				"items": [
+					{
+						"_id": "FuelReward",
+						"_tpl": "5d1b36a186f7742523398433",
+						"upd": {
+							"StackObjectsCount": 2
+						}
+					}
+				]
 			}
 		],
 		"Fail": []

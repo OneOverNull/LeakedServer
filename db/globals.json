@@ -763,7 +763,7 @@
             "GlobalItemPriceModifier": 1,
             "TradingUnlimitedItems": false,
             "MaxLoyaltyLevelForAll": false,
-            "GlobalLootChanceModifier": 0.3,
+            "GlobalLootChanceModifier": 0.2,
             "TimeBeforeDeploy": 20,
             "TimeBeforeDeployLocal": 10,
             "LoadTimeSpeedProgress": 1,
@@ -2419,12 +2419,12 @@
             "MemoryManagementSettings": {
                 "HeapPreAllocationEnabled": false,
                 "HeapPreAllocationMB": 200,
-                "OverrideRamCleanerSettings": true,
+                "OverrideRamCleanerSettings": false,
                 "RamCleanerEnabled": true,
                 "GigabytesRequiredToDisableGCDuringRaid": 7
             }
         },
-        "time": 1590673514,
+        "time": 1591380193,
         "bot_presets": [
             {
                 "UseThis": true,

@@ -39,6 +39,22 @@
 				"id": "5d7785f786f7742fa732bf08",
 				"type": "TraderStanding",
 				"index": 2
+			},
+			{
+				"target": "rewardSsd",
+				"value": "1",
+				"id": "reward",
+				"type": "Item",
+				"index": 3,
+				"items": [
+					{
+						"_id": "rewardSsd",
+						"_tpl": "590c392f86f77444754deb29",
+						"upd": {
+							"StackObjectsCount": 1
+						}
+					}
+				]
 			}
 		],
 		"Fail": []

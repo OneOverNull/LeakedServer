@@ -303,8 +303,19 @@ function changeItemStack(pmcData, id, value, output) {
     }
 }
 
+function getQuestStatus(pmcData, questID) {
+    for (let quest of pmcData.Quests) {
+        if (quest.qid === questID) {
+            return quest.status;
+        }
+    }
+
+    return "Locked";
+}
+
 module.exports.initialize = initialize;
 module.exports.getQuestsCache = getQuestsCache;
 module.exports.acceptQuest = acceptQuest;
 module.exports.completeQuest = completeQuest;
 module.exports.handoverQuest = handoverQuest;
+module.exports.getQuestStatus = getQuestStatus;

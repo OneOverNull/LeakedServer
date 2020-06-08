@@ -19,7 +19,7 @@ function getTrader(url, info, sessionID) {
 }
 
 function getAssort(url, info, sessionID) {
-    return response_f.getBody(trader_f.traderServer.getAssort(url.replace("/client/trading/api/getTraderAssort/", "")));
+    return response_f.getBody(trader_f.traderServer.getAssort(sessionID, url.replace("/client/trading/api/getTraderAssort/", "")));
 }
 
 router.addStaticRoute("/client/trading/api/getTradersList", getTraderList);

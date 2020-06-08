@@ -55,6 +55,22 @@
 				"id": "5d7629cd86f774454c5360bf",
 				"type": "TraderStanding",
 				"index": 3
+			},
+			{
+				"target": "metaltank",
+				"value": "1",
+				"id": "reward",
+				"type": "Item",
+				"index": 5,
+				"items": [
+					{
+						"_id": "metaltank",
+						"_tpl": "5d1b36a186f7742523398433",
+						"upd": {
+							"StackObjectsCount": 1
+						}
+					}
+				]
 			}
 		],
 		"Fail": []
