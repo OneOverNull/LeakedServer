@@ -92,17 +92,9 @@ class HealthServer {
     saveHealth(pmcData, info, sessionID) {
         let nodeHealth = this.healths[sessionID];
         let nodeEffects = this.effects[sessionID];
-        let BodyPartsList = null;
-
-        if(info.IsAlive){
-            BodyPartsList = info.Health;
-            nodeHealth.Hydration = info.Hydration;
-            nodeHealth.Energy = info.Energy;
-        } else {
-            BodyPartsList = info.BodyParts;
-            nodeHealth.Hydration = info.Hydration.Current;
-            nodeHealth.Energy = info.Energy.Current;
-        }
+        let BodyPartsList = info.Health;
+        nodeHealth.Hydration = info.Hydration;
+        nodeHealth.Energy = info.Energy;
 
         for (let bodyPart of Object.keys(BodyPartsList)) {
             if (BodyPartsList[bodyPart].Effects != undefined) { 

@@ -289,7 +289,7 @@ function saveProgress(offraidData, sessionID) {
         return;
     } else {
         pmcData = setInventory(pmcData, offraidData.profile);
-        health_f.healthServer.saveHealth(pmcData, offraidData.profile.Health, sessionID);
+        health_f.healthServer.saveHealth(pmcData, offraidData.health, sessionID);
     }
 
     // remove inventory if player died and send insurance items
