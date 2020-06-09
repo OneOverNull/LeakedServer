@@ -12,7 +12,7 @@
 		"Width": 3,
 		"Height": 1,
 		"StackMaxSize": 1,
-		"Rarity": "Not_exist",
+		"Rarity": "Rare",
 		"SpawnChance": 5,
 		"CreditsPrice": 16200,
 		"ItemSound": "mod",

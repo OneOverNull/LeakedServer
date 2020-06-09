@@ -6,6 +6,8 @@
 	"type": "Merchant",
 	"isKey": false,
 	"restartable": false,
+	"instantComplete": false,
+	"secretQuest": false,
 	"min_level": 1,
 	"canShowNotificationsInGame": true,
 	"rewards": {
@@ -18,14 +20,14 @@
 				"index": 0
 			},
 			{
-				"target": "5e0ac74b9d594972a112a97e",
+				"target": "5ede35491f4c4572b608fe03",
 				"value": "10000",
 				"id": "5ae9ab1986f7743dfb61b904",
 				"type": "Item",
 				"index": 1,
 				"items": [
 					{
-						"_id": "5e0ac74b9d594972a112a97e",
+						"_id": "5ede35491f4c4572b608fe03",
 						"_tpl": "5449016a4bdc2d6f028b456f",
 						"upd": {
 							"StackObjectsCount": 10000
@@ -41,14 +43,14 @@
 				"index": 2
 			},
 			{
-				"target": "5e0ac74b9d594972a112a97f",
+				"target": "5ede35491f4c4572b608fe04",
 				"value": "1",
 				"id": "5ae9abfb86f7741e935c9a63",
 				"type": "Item",
 				"index": 3,
 				"items": [
 					{
-						"_id": "5e0ac74b9d594972a112a97f",
+						"_id": "5ede35491f4c4572b608fe04",
 						"_tpl": "59e7643b86f7742cbf2c109a",
 						"upd": {
 							"StackObjectsCount": 1

@@ -40,7 +40,7 @@
 	"MaxBotPerZone": 8,
 	"OpenZones": "ZoneRailStrorage,ZonePTOR1,ZonePTOR2,ZoneBarrack,ZoneBunkerStorage,ZoneSubStorage",
 	"OcculsionCullingEnabled": false,
-	"GlobalLootChanceModifier": 0.3,
+	"GlobalLootChanceModifier": 0.25,
 	"OldSpawn": true,
 	"NewSpawn": false,
 	"BotMax": 0,
@@ -62,12 +62,14 @@
 	"AccessKeys": [],
 	"MinMaxBots": [],
 	"BotLocationModifier": {
-		"AccuracySpeed": 1,
-		"Scattering": 1,
-		"GainSight": 1,
+		"AccuracySpeed": 0.6,
+		"Scattering": 0.6,
+		"GainSight": 1.3,
 		"MarksmanAccuratyCoef": 1,
-		"VisibleDistance": 1,
-		"DistToPersueAxemanCoef": 0.7
+		"VisibleDistance": 1.3,
+		"DistToPersueAxemanCoef": 0.7,
+		"DistToSleep": 350,
+		"DistToActivate": 330
 	},
 	"exits": [],
 	"DisabledForScav": false,

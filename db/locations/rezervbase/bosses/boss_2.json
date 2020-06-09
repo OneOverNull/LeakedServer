@@ -1,6 +1,6 @@
 {
 	"BossName": "pmcBot",
-	"BossChance": 100,
+	"BossChance": 50,
 	"BossZone": "ZoneRailStrorage",
 	"BossPlayer": false,
 	"BossDifficult": "normal",

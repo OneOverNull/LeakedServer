@@ -43,21 +43,15 @@ class HealthServer {
         // update medkit used (hpresource)
         for (let item of pmcData.Inventory.items) {
             if (item._id === body.item) {
-                let itemProps = itm_hf.getItem(item._tpl)[1]._props;
-                let maxHpResource = itemProps.MaxHpResource;
-
-                // todo: change output
-                // added checks for splint and non medkit items
-                if (item.upd != undefined && "MedKit" in item.upd) {
+                if ("MedKit" in item.upd) {
                     item.upd.MedKit.HpResource -= body.count;
-                } else if (maxHpResource > 0) {
-                    if (item.upd == undefined)
-                        item.upd = {};
-                    item.upd.MedKit = {"HpResource": MaxHpResource - body.count};
+                } else {
+                    let maxhp = itm_hf.getItem(item._tpl)[1]._props.MaxHpResource;
+                    item.upd.MedKit = {"HpResource": maxhp - body.count};
                 }
     
-                if (maxHpResource === 0 || item.upd.MedKit.HpResource === 0) {
-                    output = move_f.removeItem(pmcData, body.item, output, sessionID);
+                if (item.upd.MedKit.HpResource === 0) {
+                    move_f.removeItem(pmcData, body.item, output, sessionID);
                 }
             }
         }

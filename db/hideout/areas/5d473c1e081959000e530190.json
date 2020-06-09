@@ -60,31 +60,31 @@
 				},
 				{
 					"templateId": "5d1b2fa286f77425227d1674",
-					"count": 2,
+					"count": 4,
 					"isFunctional": false,
 					"type": "Item"
 				},
 				{
 					"templateId": "5c06779c86f77426e00dd782",
-					"count": 8,
+					"count": 14,
 					"isFunctional": false,
 					"type": "Item"
 				},
 				{
 					"templateId": "590a3b0486f7743954552bdb",
-					"count": 3,
+					"count": 5,
 					"isFunctional": false,
 					"type": "Item"
 				},
 				{
 					"templateId": "5733279d245977289b77ec24",
-					"count": 3,
+					"count": 4,
 					"isFunctional": false,
 					"type": "Item"
 				},
 				{
 					"skillName": "Strength",
-					"skillLevel": 3,
+					"skillLevel": 2,
 					"type": "Skill"
 				},
 				{

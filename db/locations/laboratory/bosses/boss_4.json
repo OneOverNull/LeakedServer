@@ -1,6 +1,6 @@
 {
 	"BossName": "pmcBot",
-	"BossChance": 65,
+	"BossChance": 45,
 	"BossZone": "BotZoneBasement",
 	"BossPlayer": false,
 	"BossDifficult": "normal",
