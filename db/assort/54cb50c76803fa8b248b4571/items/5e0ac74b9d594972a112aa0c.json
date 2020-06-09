@@ -1,0 +1,10 @@
+{
+    "_id": "5e0ac74b9d594972a112aa0c",
+    "_tpl": "5caf1041ae92157c28402e3f",
+    "parentId": "5e0ac74b9d594972a112aa0a",
+    "slotId": "mod_magazine",
+    "upd": {
+		 "UnlimitedCount": true,
+        "StackObjectsCount": 999999999
+	}
+}

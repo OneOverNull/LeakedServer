@@ -8,6 +8,8 @@
 	"restartable": false,
 	"min_level": 0,
 	"canShowNotificationsInGame": false,
+	"instantComplete": false,
+	"secretQuest": false,
 	"rewards": {
 		"Started": [],
 		"Success": [

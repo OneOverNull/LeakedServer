@@ -1,0 +1,10 @@
+{
+    "_id": "5e0ac74b9d594972a112a874",
+    "_tpl": "59e649f986f77411d949b246",
+    "parentId": "5e3c0b7b7dfe975b6f2b052f",
+    "slotId": "mod_gas_block",
+    "upd": {
+		 "UnlimitedCount": true,
+        "StackObjectsCount": 999999999
+	}
+}

@@ -69,6 +69,20 @@
 						}
 					}
 				]
+			},
+			{
+				"target": "5bcf242686f7746a45695afe",
+				"id": "newAssort",
+				"type": "AssortmentUnlock",
+				"loyaltyLevel": 3,
+				"traderId": "5c0647fdd443bc2504c2d371",
+				"index": 5,
+				"items": [
+					{
+						"_id": "5bcf242686f7746a45695afe",
+						"_tpl": "5bc5a351d4351e003477a414"
+					}
+				]
 			}
 		],
 		"Fail": []

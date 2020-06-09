@@ -1,0 +1,10 @@
+{
+    "_id": "5e0ac74b9d594972a112a877",
+    "_tpl": "59e6449086f7746c9f75e822",
+    "parentId": "5e3c0b7b7dfe975b6f2b052f",
+    "slotId": "mod_reciever",
+    "upd": {
+		 "UnlimitedCount": true,
+        "StackObjectsCount": 999999999
+	}
+}

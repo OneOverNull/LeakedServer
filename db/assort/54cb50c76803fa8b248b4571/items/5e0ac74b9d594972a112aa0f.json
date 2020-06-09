@@ -1,0 +1,10 @@
+{
+    "_id": "5e0ac74b9d594972a112aa0f",
+    "_tpl": "5cda9bcfd7f00c0c0b53e900",
+    "parentId": "5e0ac74b9d594972a112aa0a",
+    "slotId": "mod_foregrip",
+    "upd": {
+		 "UnlimitedCount": true,
+        "StackObjectsCount": 999999999
+	}
+}
