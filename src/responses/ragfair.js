@@ -1,7 +1,7 @@
 "use strict";
 
 function searchRagfair(url, info, sessionID) {
-    return json.stringify({"err": 0, "errmsg": null, "data": ragfair_f.getOffers(info)});
+    return json.stringify({"err": 0, "errmsg": null, "data": ragfair_f.getOffers(info, sessionID)});
 }
 
 function itemMarketPrice(url, info, sessionID) {

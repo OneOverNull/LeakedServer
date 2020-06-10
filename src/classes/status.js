@@ -74,7 +74,7 @@ function examineItem(pmcData, body, sessionID) {
     
         // get trader assort
         if (body.fromOwner.type === "Trader") {
-            items = trader_f.traderServer.getAssort(body.fromOwner.id).items;
+            items = trader_f.traderServer.getAssort(sessionID, body.fromOwner.id).items;
         }
     }
 

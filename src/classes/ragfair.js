@@ -124,7 +124,7 @@ function countCategories(response) {
     response.categories = categ;
 }
 
-function getOffers(request) {
+function getOffers(request, sessionID) {
 
     if( request.offerOwnerType ==  1 )//if its traders items, just a placeholder it will be handled differently later 
     {
@@ -136,7 +136,7 @@ function getOffers(request) {
     let offers = [];
 
     if (!request.linkedSearchId && !request.neededSearchId) {
-        response.categories = (trader_f.traderServer.getAssort("ragfair")).loyal_level_items;
+        response.categories = (trader_f.traderServer.getAssort(sessionID, "ragfair")).loyal_level_items;
     }
 
     if (request.buildCount) {
