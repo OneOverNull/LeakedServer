@@ -117,15 +117,15 @@ class TraderServer {
                         base = this.removeItemFromAssort(base, key);
                     }
 
-                    if (key in questassort.started && questassort.getQuestStatus(pmcData, questassort.started[key]) !== "Started") {
+                    if (key in questassort.started && quest_f.getQuestStatus(pmcData, questassort.started[key]) !== "Started") {
                         base = this.removeItemFromAssort(base, key);
                     }
 
-                    if (key in questassort.success && questassort.getQuestStatus(pmcData, questassort.success[key]) !== "Success") {
+                    if (key in questassort.success && quest_f.getQuestStatus(pmcData, questassort.success[key]) !== "Success") {
                         base = this.removeItemFromAssort(base, key);
                     }
 
-                    if (key in questassort.fail && questassort.getQuestStatus(pmcData, questassort.fail[key]) !== "Fail") {
+                    if (key in questassort.fail && quest_f.getQuestStatus(pmcData, questassort.fail[key]) !== "Fail") {
                         base = this.removeItemFromAssort(base, key);
                     }
                 }
