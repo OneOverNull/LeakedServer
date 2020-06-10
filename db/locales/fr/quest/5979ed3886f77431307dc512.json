@@ -1,7 +1,7 @@
 {
 	"name": "Qu'y a-t-il sur la clé USB ?",
 	"conditions": {
-		"5979ee2986f7743ec214c7a4": " Trouvez 2 clés USB contenant des informations",
+		"5979ee2986f7743ec214c7a4": " Trouvez en raid 2 clés USB contenant des informations",
 		"5979ee4586f7743ec214c7a5": "Livrez-les à Skier",
 		"59819f0986f7744e6d0b7520": ""
 	},

@@ -97,6 +97,22 @@
                         "slotId": "mod_sight_front"
                     }
                 ]
+            },
+            {
+                "target": "MilitaryCable",
+                "value": "2",
+                "id": "Reward",
+                "type": "Item",
+                "index": 3,
+                "items": [
+                    {
+                        "_id": "MilitaryCable",
+                        "_tpl": "5d0375ff86f774186372f685",
+                        "upd": {
+                            "StackObjectsCount": 2
+                        }
+                    }
+                ]
             }
         ],
         "Success": [

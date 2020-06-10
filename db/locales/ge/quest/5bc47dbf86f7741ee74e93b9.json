@@ -6,7 +6,7 @@
 	"failMessageText": "5bc47df886f7741e6b2f3326",
 	"startedMessageText": "",
 	"conditions": {
-		"5bc47e3e86f7741e6b2f3332": "Töte 5 PMCs mit einer Mosin aus naher Distanz, weniger als 15 Meter entfernt",
+		"5bc47e3e86f7741e6b2f3332": "Eliminiere 4 PMCs aus einer Distanz von weniger als 25 Metern mit einer Mosin",
 		"5bdabf1f86f7743e1809c556": ""
 	},
 	"location": "any"

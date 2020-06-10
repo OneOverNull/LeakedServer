@@ -2,9 +2,5 @@
     "_id": "5ede35491f4c4572b608fdf9",
     "_tpl": "59ccd11386f77428f24a488f",
     "parentId": "5ede35491f4c4572b608fdf2",
-    "slotId": "mod_gas_block",
-    "upd": {
-		 "UnlimitedCount": true,
-        "StackObjectsCount": 999999999
-	}
+    "slotId": "mod_gas_block"
 }

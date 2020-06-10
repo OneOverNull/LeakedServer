@@ -99,7 +99,11 @@ class TraderServer {
                 logger.logWarning("generating fence");
                 this.generateFenceAssort();
             } else {
-                this.assorts[traderID] = (json.parse(json.read(db.user.cache["assort_" + traderID]))).data;
+                logger.logData(traderID);
+                logger.logData(db.user.cache["assort_" + traderID]);
+                logger.logData(db.user.cache);
+                let tmp = json.parse(json.read(db.user.cache["assort_" + traderID]));
+                this.assorts[traderID] = tmp.data;
             }
         }
         
@@ -117,15 +121,15 @@ class TraderServer {
                         base = this.removeItemFromAssort(base, key);
                     }
 
-                    if (key in questassort.started && questassort.getQuestStatus(pmcData, questassort.started[key]) !== "Started") {
+                    if (key in questassort.started && quest_f.getQuestStatus(pmcData, questassort.started[key]) !== "Started") {
                         base = this.removeItemFromAssort(base, key);
                     }
 
-                    if (key in questassort.success && questassort.getQuestStatus(pmcData, questassort.success[key]) !== "Success") {
+                    if (key in questassort.success && quest_f.getQuestStatus(pmcData, questassort.success[key]) !== "Success") {
                         base = this.removeItemFromAssort(base, key);
                     }
 
-                    if (key in questassort.fail && questassort.getQuestStatus(pmcData, questassort.fail[key]) !== "Fail") {
+                    if (key in questassort.fail && quest_f.getQuestStatus(pmcData, questassort.fail[key]) !== "Fail") {
                         base = this.removeItemFromAssort(base, key);
                     }
                 }

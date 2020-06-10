@@ -2,9 +2,5 @@
     "_id": "5ede35491f4c4572b608fdf8",
     "_tpl": "599860e986f7743bb57573a6",
     "parentId": "5ede35491f4c4572b608fdf2",
-    "slotId": "mod_sight_rear",
-    "upd": {
-		 "UnlimitedCount": true,
-        "StackObjectsCount": 999999999
-	}
+    "slotId": "mod_sight_rear"
 }

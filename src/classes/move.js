@@ -371,7 +371,7 @@ function addItem(pmcData, body, output, sessionID, foundInRaid = false) {
     } else if (body.tid === "579dc571d53a0658a154fbec") {
         items = [{_id: body.item_id, _tpl: body.item_id}];
     } else {
-        items = trader_f.traderServer.getAssort(body.tid).items;
+        items = trader_f.traderServer.getAssort(sessionID, body.tid).items;
     }
 
     for (let item of items) {

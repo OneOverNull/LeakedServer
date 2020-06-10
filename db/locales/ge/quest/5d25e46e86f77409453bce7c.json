@@ -1,10 +1,12 @@
 {
 	"conditions": {
-		"5d27446f86f77475a86565a3": "Übergib 2 tragbare Defibrillatoren",
-		"5d7782c686f7742fa732bf07": "Über gib drei CMS Kits",
+		"5d27446f86f77475a86565a3": "Übergib den tragbaren Defibrillator",
+		"5d7782c686f7742fa732bf07": "Übergib 2 CMS-Kits",
 		"5d7782f886f7742fa65b65f5": "",
 		"5d77830086f7745041358b35": "",
-		"5d77a38e86f7745041358b43": ""
+		"5d77a38e86f7745041358b43": "",
+		"5ec1504183b69d213d3c2ee8": "Finde im Raid einen tragbaren Defibrillator",
+		"5ec1538a92e95f77ac7a2529": "Finde im Raid 2 CMS-Kits"
 	},
 	"name": "Rettungswagen",
 	"note": "",

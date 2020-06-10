@@ -6,7 +6,7 @@
 	"failMessageText": "5bc480f886f7741b0923186a",
 	"startedMessageText": "",
 	"conditions": {
-		"5bc4813886f774226045cb9a": " Erreiche Stufe 5 der Fähigkeit \"Scharfschützengewehr\"",
+		"5bc4813886f774226045cb9a": "Erreiche Stufe 4 der Fähigkeit \"Scharfschützengewehr\"",
 		"5bdabf3386f7743e171249ae": ""
 	},
 	"location": "any"

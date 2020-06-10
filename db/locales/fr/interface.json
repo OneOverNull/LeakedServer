@@ -1062,7 +1062,7 @@
 	"MemoryMentalForget1": "Réduit la vitesse à laquelle vous oubliez [(-{0:0%})]",
 	"IntellectEliteNaturalLearner": "Vous n'avez pas besoin d'un manuel pour examiner cet objet",
 	"IntellectEliteAmmoCounter": "Compteur de munitions",
-	"AttentionRareLoot": "Augmente les chances de trouver un meilleur butin [(+ {0:0 %})]",
+	"AttentionRareLoot": "Augmente les chances de trouver le meilleur butin en premier [(+ {0:0 %})]",
 	"IntellectLearningSpeed": "Augmentation de vitesse d’examen [(+ {0:0 %})]",
 	"PerceptionmEliteNoIdea": "Notification de proximité de butin",
 	"MetabolismRatioPlus": "Renforce les bienfaits de la nourriture et des boissons [(+{0:0%})]",

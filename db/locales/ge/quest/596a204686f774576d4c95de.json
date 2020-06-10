@@ -1,7 +1,8 @@
 {
 	"name": "Gesundheitsstandards. Teil 2",
 	"conditions": {
-		"596a20ac86f7741ddf17dbf4": "Übergib die Gasanalysatoren an Therapist"
+		"596a20ac86f7741ddf17dbf4": "Übergib die Gasanalysatoren an Therapist",
+		"5ec1398886f7561e047757a5": "Finde im Raid 2 Gasanalysatoren"
 	},
 	"description": "5abe61a786f7746ad512da57",
 	"note": "",

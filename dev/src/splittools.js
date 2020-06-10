@@ -206,8 +206,6 @@ function localesHelper(language, shortName) {
             let output = outputDir + "locales/" + shortName + "/"  + element + "/" + target + ".json";
             let file = key[target];
 
-            console.log(file);
-
             if (element === "quest" && "successMessageText" in file) {
                 file.startedMessageText = "";
             }
@@ -229,6 +227,14 @@ function locales() {
     localesHelper(".client.locale.ch.json", "ch");
     localesHelper(".client.locale.it.json", "it");
     localesHelper(".client.locale.tu.json", "tu");
+}
+
+function globals() {
+    let output = json.parse(json.read(inputDir + ".client.globals.json"));
+
+    output.data.config.EventType = ["Christmas"];
+    json.write(outputDir + "globals.json", output);
+    console.log("done: globals");
 }
 
 function generateRagfairTrader() {
@@ -316,7 +322,6 @@ function splitAll() {
 
     items();
     quests();
-    
     traders();
     locations();
     language();
@@ -328,6 +333,7 @@ function splitAll() {
     templates();
     assort();
     locales();
+    globals();
     generateRagfairTrader();
 
     console.log("Splitting done");

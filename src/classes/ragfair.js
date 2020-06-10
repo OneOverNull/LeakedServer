@@ -124,10 +124,9 @@ function countCategories(response) {
     response.categories = categ;
 }
 
-function getOffers(request) {
-
-    if( request.offerOwnerType ==  1 )//if its traders items, just a placeholder it will be handled differently later 
-    {
+function getOffers(sessionID, request) {
+    //if its traders items, just a placeholder it will be handled differently later 
+    if (request.offerOwnerType ===  1) {
         return getOffersFromTraders(request)
     }
 
@@ -136,7 +135,7 @@ function getOffers(request) {
     let offers = [];
 
     if (!request.linkedSearchId && !request.neededSearchId) {
-        response.categories = (trader_f.traderServer.getAssort("ragfair")).loyal_level_items;
+        response.categories = (trader_f.traderServer.getAssort(sessionID, "ragfair")).loyal_level_items;
     }
 
     if (request.buildCount) {
@@ -385,13 +384,11 @@ function createOffer(template, onlyFunc, usePresets = true) {
     return offers;
 }
 
-function itemMarKetPrice(request)
-{
+function itemMarKetPrice(request) {
     return null
 }
 
-function ragFairAddOffer(request)
-{
+function ragFairAddOffer(request) {
     return null
 }
 

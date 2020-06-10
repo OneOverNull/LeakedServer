@@ -1,7 +1,7 @@
 {
 	"name": "Was ist auf dem USB-Stick?",
 	"conditions": {
-		"5979ee2986f7743ec214c7a4": " Finde zwei USB-Sticks mit Informationen",
+		"5979ee2986f7743ec214c7a4": "Finde im Raid zwei USB-Sticks mit Informationen",
 		"5979ee4586f7743ec214c7a5": "Übergib sie an Skier",
 		"59819f0986f7744e6d0b7520": ""
 	},

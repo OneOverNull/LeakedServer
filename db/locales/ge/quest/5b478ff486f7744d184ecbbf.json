@@ -1,9 +1,10 @@
 {
 	"conditions": {
-		"5b47905886f7746807461fe2": "Übergib 5 Atemschutzmasken",
-		"5b4790a886f774563c7a489f": "Übergib 5 medizinische Bluttransfusionssets",
+		"5b47905886f7746807461fe2": "Übergib 4 Atemschutzmasken",
+		"5b4790a886f774563c7a489f": "Übergib 3 medizinische Bluttransfusionssets",
 		"5b4f0b1f86f7746c9e27e9ea": "",
-		"5cb5ffd986f7746ef55de2c7": "Finde fünf Atemschutzmasken im Raid"
+		"5cb5ffd986f7746ef55de2c7": "Finde im Raid 4 Atemschutzmasken",
+		"5ec1388d83b69d213d3c2ee0": "Finde im Raid 3 medizinische Bluttransfusionskits"
 	},
 	"name": "\"Vitamine\". Teil 2",
 	"note": "",
