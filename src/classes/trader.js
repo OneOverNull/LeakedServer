@@ -109,10 +109,11 @@ class TraderServer {
         
         // 1 is min level, 4 is max level
         let base = this.assorts[traderID];
-        let questassort = json.parse(json.read(db.assort[traderID].questassort));
-        let pmcData = profile_f.profileServer.getPmcProfile(sessionID);
 
         if (traderID !== "ragfair") {
+            let questassort = json.parse(json.read(db.assort[traderID].questassort));
+            let pmcData = profile_f.profileServer.getPmcProfile(sessionID);
+
             let level = this.traders[traderID].loyalty.currentLevel;
 
             for (let i = 1; i < 4; i++) {
